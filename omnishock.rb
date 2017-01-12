@@ -3,6 +3,8 @@ class Omnishock < Formula
   homepage "https://github.com/ticky/omnishock"
   url "https://github.com/ticky/omnishock.git", :tag => "v0.0.2"
 
+  head "https://github.com/ticky/omnishock.git"
+
   depends_on "rust" => :build
 
   def install
