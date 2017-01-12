@@ -1,0 +1,4 @@
+language: ruby
+os: osx
+osx_image: latest
+script: brew audit ./*.rb
