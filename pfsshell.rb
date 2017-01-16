@@ -10,4 +10,8 @@ class Pfsshell < Formula
     system "make"
     bin.install "pfsshell"
   end
+
+  test do
+    system "echo \"help\nexit\" | #{bin}/pfsshell"
+  end
 end
