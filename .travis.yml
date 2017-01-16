@@ -1,4 +1,4 @@
 language: ruby
 os: osx
 osx_image: xcode8.2
-script: brew test-bot --ci-auto ./*.rb
+script: brew test-bot --ci-auto ./Formula/*.rb
