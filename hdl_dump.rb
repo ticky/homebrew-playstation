@@ -10,4 +10,8 @@ class HdlDump < Formula
     system "make", "RELEASE=yes", "IIN_OPTICAL_MMAP=no"
     bin.install "hdl_dump"
   end
+
+  test do
+    system "echo \"$(#{bin}/hdl_dump)\" | grep \"hdl_dump-\""
+  end
 end
