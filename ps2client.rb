@@ -10,4 +10,8 @@ class Ps2client < Formula
     system "make"
     bin.install "bin/fsclient", "bin/ps2client"
   end
+
+  test do
+    system "echo \"$(#{bin}/ps2client)\" | grep Usage"
+  end
 end
