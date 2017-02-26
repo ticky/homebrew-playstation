@@ -6,9 +6,11 @@ class Popstation < Formula
 
   head "https://github.com/ticky/popstation.git"
 
+  depends_on "base_pbp"
   depends_on "iniparser"
 
   def install
+    inreplace "common.h", "BASE.PBP", Formula["base_pbp"].opt_pkgshare/"BASE.PBP"
     system "make"
     bin.install "popstation", "popstation_md"
   end
