@@ -1,4 +1,8 @@
 language: ruby
 os: osx
 osx_image: xcode8.2
+# Hack to work around a weird broken PR behaviour in `brew test-bot`
+before_script:
+  - mkdir -p $(brew --prefix)/Homebrew/Library/taps/ticky/homebrew-playstation
+  - ln -s . $(brew --prefix)/Homebrew/Library/taps/ticky/homebrew-playstation
 script: brew test-bot --ci-auto ./Formula/*.rb
