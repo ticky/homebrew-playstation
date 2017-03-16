@@ -8,8 +8,8 @@ class PbpUtilities < Formula
 
   def install
     cd "tools" do
-      system "cc", "-Wall", "-O3", "-o", "pack-pbp", "pack-pbp.c"
-      system "cc", "-Wall", "-O3", "-o", "unpack-pbp", "unpack-pbp.c"
+      system ENV.cc, "-Wall", "-o", "pack-pbp", "pack-pbp.c"
+      system ENV.cc, "-Wall", "-o", "unpack-pbp", "unpack-pbp.c"
       bin.install "pack-pbp"
       bin.install "unpack-pbp"
     end
