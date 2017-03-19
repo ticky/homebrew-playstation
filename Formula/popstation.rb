@@ -1,13 +1,15 @@
 class Popstation < Formula
   desc "Utility to convert PlayStation ISOs for use with PSP Popstation"
   homepage "https://github.com/ticky/popstation"
-  url "https://github.com/ticky/popstation.git", :revision => "5136c0e73042b114f2c73439647be288b49fbc0d"
-  version "2017-01-04T02:50:47Z"
+  url "https://github.com/ticky/popstation.git", :revision => "51365d05c757ee346f8f1c4b9ea2691a2b8be608"
+  version "2017-03-19T07:24:14Z"
 
   head "https://github.com/ticky/popstation.git"
 
+  depends_on "iniparser"
+
   def install
     system "make"
-    bin.install "popstation/popstation", "popstation_md/popstation_md"
+    bin.install "popstation", "popstation_md"
   end
 end
