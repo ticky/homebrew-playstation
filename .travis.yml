@@ -5,4 +5,5 @@ osx_image: xcode8.2
 before_script:
   - mkdir -p $(brew --prefix)/Homebrew/Library/taps/ticky
   - ln -s $(pwd) $(brew --prefix)/Homebrew/Library/taps/ticky/homebrew-playstation
-script: brew test-bot --ci-auto ./Formula/*.rb
+# Hack to avoid testing BASE.PBP and its dependencies in CI
+script: brew test-bot --ci-auto $(grep -Lwr --include=\*.rb ./Formula -e "BASE.PBP" -e "base_pbp")
