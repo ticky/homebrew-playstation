@@ -6,6 +6,7 @@ class Omnishock < Formula
   head "https://github.com/ticky/omnishock.git"
 
   depends_on "rust" => :build
+  depends_on "sdl2"
 
   def install
     system "cargo", "build", "--release"
