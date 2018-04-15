@@ -21,7 +21,7 @@ class Quickbms < Formula
 
   test do
     # Taken from the sample at http://aluigi.altervista.org/bms/quickbms_crc_engine.txt
-    (testpath/"crc.bms").write <<-EOS.undent
+    (testpath/"crc.bms").write <<~EOS
       encryption CRC 0xEDB88320 "32 -1 -1 0 0 1"
       get SIZE asize
       log MEMORY_FILE 0 SIZE
