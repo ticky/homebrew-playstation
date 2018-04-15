@@ -2,8 +2,8 @@ class Quickbms < Formula
   desc "Generic file extractor and reimporter"
   homepage "http://aluigi.altervista.org/quickbms.htm"
   url "http://aluigi.altervista.org/papers/quickbms_src.zip"
-  version "0.8.0"
-  sha256 "b2dc34503f0371fbc796efa270ce38a0c8dd0d1a8960d6c23f793bdf2abdc596"
+  version "0.8.4"
+  sha256 "dd422db7448e5f3a4c593a3ba789e1c3b5b4978c05d3b6c648b52c030bded2cf"
 
   depends_on "openssl"
 
@@ -11,17 +11,11 @@ class Quickbms < Formula
   fails_with :gcc_4_0
   fails_with :gcc_4_2
 
-  # Bundles various OS X-specific fixes and improvements
-  patch do
-    url "https://github.com/mistydemeo/quickbms/compare/v0.8.0...5752a6a2a38e16211952553fcffa59570855ac42.patch"
-    sha256 "be8d91d08358a76366101dc1cf7c2fcecab5e0cf70bddb227b3c2263dc54c131"
-  end
-
   def install
     # quickbms is 32-bit only
     ENV.m32
 
-    system "make", "USE_OPENSSL=1"
+    system "make"
     system "make", "install", "PREFIX=#{prefix}"
   end
 
