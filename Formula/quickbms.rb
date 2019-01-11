@@ -8,7 +8,6 @@ class Quickbms < Formula
   depends_on "openssl"
 
   fails_with :clang
-  fails_with :gcc_4_0
   fails_with :gcc_4_2
 
   def install
