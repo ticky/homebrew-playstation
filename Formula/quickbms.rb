@@ -2,18 +2,20 @@ class Quickbms < Formula
   desc "Generic file extractor and reimporter"
   homepage "http://aluigi.altervista.org/quickbms.htm"
   url "http://aluigi.altervista.org/papers/quickbms_src.zip"
-  version "0.8.4"
-  sha256 "dd422db7448e5f3a4c593a3ba789e1c3b5b4978c05d3b6c648b52c030bded2cf"
+  version "0.9.2"
+  sha256 "95504b77736ee37e06b6c5ccc826bdce88f31a690bba16daa9185b4c2e520dfe"
 
   depends_on "openssl"
 
   fails_with :clang
-  fails_with :gcc_4_0
   fails_with :gcc_4_2
+  # Crashes in `brew test`; not sure why yet
+  fails_with :gcc => "8"
 
   def install
-    # quickbms is 32-bit only
-    ENV.m32
+    # The makefile calls brew, which fails when run from *inside* brew because
+    # brew isn't in the path. It's brewception!
+    inreplace "Makefile", "`brew --prefix openssl`", Formula["openssl"].opt_prefix
 
     system "make"
     system "make", "install", "PREFIX=#{prefix}"
