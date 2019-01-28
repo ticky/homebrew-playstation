@@ -8,7 +8,6 @@ class Quickbms < Formula
   depends_on "openssl"
 
   fails_with :clang
-  fails_with :gcc_4_2
   # Crashes in `brew test`; not sure why yet
   fails_with :gcc => "8"
 
