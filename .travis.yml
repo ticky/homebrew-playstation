@@ -6,4 +6,9 @@ addons:
     update: true
     brewfile: true
 
+# Hack to make sure dependencies within the tap can build each other
+before_install:
+  - mkdir -p $(brew --prefix)/Homebrew/Library/taps/ticky
+  - ln -s $(pwd) $(brew --prefix)/Homebrew/Library/taps/ticky/homebrew-playstation
+
 script: ./Scripts/test-formulae.sh
