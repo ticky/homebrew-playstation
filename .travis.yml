@@ -1,5 +1,4 @@
-language: ruby
 os: osx
-osx_image: xcode8.2
+language: ruby
 script:
   - ./Scripts/find-testable-formulae.sh | xargs -n 1 sh -c "echo \"Testing \$(basename \$1)...\" && brew install \$1 && brew test \$1"
