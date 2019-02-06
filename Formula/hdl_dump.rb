@@ -1,8 +1,8 @@
 class HdlDump < Formula
   desc "CLI tool to interact with Open PS2 Loader over a network"
   homepage "https://github.com/AKuHAK/hdl-dump.git"
-  url "https://github.com/AKuHAK/hdl-dump.git", :revision => "9d2b6969b962a17a1bb692ca55a868af7f77192b"
-  version "2016-03-05T18:31:08Z"
+  url "https://github.com/AKuHAK/hdl-dump.git", :revision => "67e66ca0e0a0000563f75c573a046cb8614745ad"
+  version "2018-07-22T14:45:53Z"
 
   head "https://github.com/AKuHAK/hdl-dump.git"
 
