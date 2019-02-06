@@ -21,7 +21,7 @@ while read -r formula; do
 
   # NOTE: We need this so we can test the exit state of `brew test` while also piping its output
   set +e
-    if ! TEST_OUTPUT=$(brew test "$formula" 2>&1 | tee /dev/tty); then
+    if ! TEST_OUTPUT=$(unbuffer brew test "$formula" 2>&1 | tee /dev/tty); then
       TEST_FAILED=Yes
     fi
   set -e

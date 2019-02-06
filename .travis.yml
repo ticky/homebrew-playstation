@@ -1,7 +1,9 @@
 os: osx
 language: ruby
 
-before_script:
-  - brew update --verbose
+addons:
+  homebrew:
+    update: true
+    brewfile: true
 
 script: ./Scripts/test-formulae.sh
