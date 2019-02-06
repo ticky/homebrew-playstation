@@ -5,4 +5,4 @@ before_script:
   - brew update
 
 script:
-  - ./Scripts/find-testable-formulae.sh | xargs -n 1 sh -c "echo \"Testing \$(basename \$1)...\" && brew install \$1 && brew test \$1"
+  - ./Scripts/find-testable-formulae.sh | xargs -n 1 sh -c "echo \"Testing \$(basename $1)...\" && brew install $1 && brew test $1"
