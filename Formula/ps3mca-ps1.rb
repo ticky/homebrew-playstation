@@ -1,10 +1,10 @@
 class Ps3mcaPs1 < Formula
   desc "A program to read and write PS1 memory card with the Memory Card Adaptor"
-  homepage "https://github.com/ticky/ps3mca-ps1"
-  url "https://github.com/ticky/ps3mca-ps1.git", :revision => "7f4dfc5a3c0502e03d97f9dc4ee6e227f71a1d2a"
-  version "2017-06-10T02:28:45Z"
+  homepage "https://github.com/paolo-caroni/ps3mca-ps1"
+  url "https://github.com/paolo-caroni/ps3mca-ps1.git", :revision => "39226475d0783c17a45b34a1e0fe6d4e8db29a21"
+  version "2018-06-23T07:23:56Z"
 
-  head "https://github.com/ticky/ps3mca-ps1.git"
+  head "https://github.com/paolo-caroni/ps3mca-ps1.git"
 
   depends_on "pkg-config" => :build
   depends_on "libusb"
