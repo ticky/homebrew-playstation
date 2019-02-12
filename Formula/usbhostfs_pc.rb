@@ -6,6 +6,8 @@ class UsbhostfsPc < Formula
 
   head "https://github.com/pspdev/psplinkusb.git"
 
+  depends_on "libusb-compat"
+
   def install
     cd "usbhostfs_pc" do
       system "make"
