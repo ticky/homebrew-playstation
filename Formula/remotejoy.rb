@@ -6,6 +6,7 @@ class Remotejoy < Formula
 
   head "https://github.com/pspdev/psplinkusb.git"
 
+  depends_on "libusb-compat"
   depends_on "sdl"
   depends_on "usbhostfs_pc"
 
