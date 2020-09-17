@@ -1,8 +1,8 @@
 class HdlDump < Formula
-  desc "CLI tool to interact with Open PS2 Loader over a network"
-  homepage "https://github.com/AKuHAK/hdl-dump.git"
-  url "https://github.com/AKuHAK/hdl-dump.git", :revision => "67e66ca0e0a0000563f75c573a046cb8614745ad"
-  version "2018-07-22T14:45:53Z"
+  desc "Install games in HDLoader format to APA-formatted hard drive"
+  homepage "https://github.com/AKuHAK/hdl-dump"
+  url "https://github.com/AKuHAK/hdl-dump.git", :revision => "92213b57d0c6a89d14d01d5a71bedb2c92ebd421"
+  version "2020-07-27T10:03:51Z"
 
   head "https://github.com/AKuHAK/hdl-dump.git"
 
