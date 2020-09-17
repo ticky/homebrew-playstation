@@ -1,14 +1,20 @@
 class Pfsshell < Formula
-  desc "CLI tool for browsing PlayStation 2 file system disks and images"
-  homepage "https://github.com/uyjulian/pfsshell"
-  url "https://github.com/uyjulian/pfsshell.git", :revision => "e2c5a6d90fffe2ef3c27608bf882fa7ad4decefd"
-  version "2018-08-04T04:50:35Z"
+  desc "Browse and edit PFS filesystems on APA-formatted hard drive"
+  homepage "https://github.com/ps2homebrew/pfsshell"
+  url "https://github.com/ps2homebrew/pfsshell.git", :tag => "v1.1.1"
 
-  head "https://github.com/uyjulian/pfsshell.git"
+  head "https://github.com/ps2homebrew/pfsshell.git"
+
+  depends_on "meson" => :build
+  depends_on "ninja" => :build
 
   def install
-    system "make"
-    bin.install "pfsshell"
+    system "meson", "build"
+
+    cd "build" do
+      system "meson", "compile"
+      bin.install "pfsshell"
+    end
   end
 
   test do
