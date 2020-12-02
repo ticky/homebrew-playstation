@@ -1,7 +1,7 @@
 class Pfsshell < Formula
   desc "Browse and edit PFS filesystems on APA-formatted hard drive"
   homepage "https://github.com/ps2homebrew/pfsshell"
-  url "https://github.com/ps2homebrew/pfsshell.git", :tag => "v1.1.1"
+  url "https://github.com/ps2homebrew/pfsshell.git", tag: "v1.1.1"
 
   head "https://github.com/ps2homebrew/pfsshell.git"
 
