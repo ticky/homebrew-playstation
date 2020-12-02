@@ -4,8 +4,11 @@
 
 A collection of PlayStation utilities buildable on macOS
 
-## Get started
+## How do I install these formulae?
 
-```sh
-brew tap ticky/playstation
-```
+`brew install ticky/playstation/<formula>`
+
+Or `brew tap ticky/playstation` and then `brew install <formula>`.
+
+## Documentation
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
