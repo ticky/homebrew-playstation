@@ -9,7 +9,6 @@ class Omnishock < Formula
   depends_on "sdl2"
 
   def install
-    system "cargo", "build", "--release"
-    bin.install "target/release/omnishock"
+    system "cargo", "install", *std_cargo_args
   end
 end

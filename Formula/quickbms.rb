@@ -21,7 +21,7 @@ class Quickbms < Formula
       get SIZE asize
       log MEMORY_FILE 0 SIZE
       print "%QUICKBMS_CRC|x%"
-      EOS
+    EOS
 
     (testpath/"test.txt").write "Test data\n"
 
