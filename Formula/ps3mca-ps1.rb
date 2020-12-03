@@ -7,7 +7,7 @@ class Ps3mcaPs1 < Formula
   head "https://github.com/paolo-caroni/ps3mca-ps1.git"
 
   depends_on "pkg-config" => :build
-  depends_on "libusb"
+  depends_on "libusb-compat"
 
   def install
     system "make"
