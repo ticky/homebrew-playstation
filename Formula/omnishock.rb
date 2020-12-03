@@ -1,7 +1,7 @@
 class Omnishock < Formula
-  desc "🎮 ¿¿¿ owo what’s this ???"
+  desc "🎮 Something to do with game controllers!"
   homepage "https://github.com/ticky/omnishock"
-  url "https://github.com/ticky/omnishock.git", tag: "v0.0.3"
+  url "https://github.com/ticky/omnishock.git", tag: "v0.0.9"
 
   head "https://github.com/ticky/omnishock.git"
 
