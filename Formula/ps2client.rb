@@ -3,6 +3,7 @@ class Ps2client < Formula
   homepage "https://github.com/ps2dev/ps2client"
   url "https://github.com/ps2dev/ps2client.git", revision: "92fcaf18aabf74daaed40bd50d428cce326a87c0"
   version "2018-10-18T440508Z"
+  revision 1
 
   head "https://github.com/ps2dev/ps2client.git"
 
