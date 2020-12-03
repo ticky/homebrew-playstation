@@ -1,8 +1,8 @@
 class Remotejoy < Formula
   desc "PSP Remote control program"
   homepage "https://github.com/pspdev/psplinkusb/tree/master/tools/remotejoy/pc"
-  url "https://github.com/pspdev/psplinkusb.git", revision: "42579d9c6c29d19f1cdb73501e246ac638b00e15"
-  version "2015-12-16T375254Z"
+  url "https://github.com/pspdev/psplinkusb.git", revision: "deb730db2b9d0fc69c89daa14e2196de92559cae"
+  version "2020-06-24T131548Z"
 
   head "https://github.com/pspdev/psplinkusb.git"
 
