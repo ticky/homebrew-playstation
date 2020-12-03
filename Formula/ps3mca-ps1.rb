@@ -8,6 +8,7 @@ class Ps3mcaPs1 < Formula
 
   depends_on "pkg-config" => :build
   depends_on "libusb-compat"
+  depends_on :macos
 
   def install
     system "make"
