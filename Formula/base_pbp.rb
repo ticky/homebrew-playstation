@@ -1,9 +1,9 @@
 class NullDownloadStrategy < CurlDownloadStrategy
   def fetch
-    if File.exist? @tarball_path
+    if File.exist? cached_location
       super
     else
-      odie "You must manually download BASE.PBP and place it in: #{@tarball_path}"
+      odie "You must manually download BASE.PBP and place it in: #{cached_location}"
     end
   end
 end
