@@ -4,6 +4,7 @@ class Quickbms < Formula
   url "http://aluigi.altervista.org/papers/quickbms-src-0.10.1.zip"
   sha256 "80f598dcd81e906076c1b522c38a3e0c220081878d7c2e9dca3902c32442459c"
 
+  depends_on "gcc@6" => :build
   depends_on "openssl"
 
   fails_with :clang
