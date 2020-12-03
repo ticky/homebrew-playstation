@@ -7,6 +7,8 @@ class Cue2pops < Formula
 
   head "https://github.com/ErikAndren/cue2pops-mac.git"
 
+  depends_on :macos
+
   def install
     system "make"
     bin.install "cue2pops"
