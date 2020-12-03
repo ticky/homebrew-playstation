@@ -7,6 +7,8 @@ class Ps2iconsys < Formula
 
   head "https://github.com/ticky/ps2iconsys.git"
 
+  depends_on :macos
+
   def install
     system "make"
     bin.install "obj_to_ps2icon", "ps2icon_to_obj", "iconsys_builder"
