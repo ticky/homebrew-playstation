@@ -1,8 +1,8 @@
 class UsbhostfsPc < Formula
   desc "PC side of the PSP USB Host filing system"
   homepage "https://github.com/pspdev/psplinkusb/tree/master/usbhostfs_pc"
-  url "https://github.com/pspdev/psplinkusb.git", revision: "4306f3f12de1bf1af91f5b8d55bc1ca631f831dc"
-  version "2015-12-15T383918Z"
+  url "https://github.com/pspdev/psplinkusb.git", revision: "deb730db2b9d0fc69c89daa14e2196de92559cae"
+  version "2020-06-24T131548Z"
 
   head "https://github.com/pspdev/psplinkusb.git"
 
