@@ -2,7 +2,7 @@ class PbpUtilities < Formula
   desc "Utilities for manipulating PSP executables"
   homepage "https://github.com/pspdev/pspsdk"
   url "https://github.com/pspdev/pspsdk.git", revision: "7fc9d5704ed1cc3c243995b508690239d1466c05"
-  version "2018-09-21T22:06:33Z"
+  version "2018-09-21T520633Z"
 
   head "https://github.com/pspdev/pspsdk.git"
 
