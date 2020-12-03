@@ -3,6 +3,7 @@ class HdlDump < Formula
   homepage "https://github.com/AKuHAK/hdl-dump"
   url "https://github.com/AKuHAK/hdl-dump.git", revision: "92213b57d0c6a89d14d01d5a71bedb2c92ebd421"
   version "2020-07-27T400351Z"
+  revision 1
 
   head "https://github.com/AKuHAK/hdl-dump.git"
 
