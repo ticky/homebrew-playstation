@@ -1,5 +1,5 @@
 class Quickbms < Formula
-  desc "Generic file extractor and reimporter"
+  desc "File extractor and reimporter, archive and file format parser, advanced tool for reverse engineers and power users, and much more"
   homepage "http://aluigi.altervista.org/quickbms.htm"
   url "http://aluigi.altervista.org/papers/quickbms_src.zip"
   version "0.10.0"
