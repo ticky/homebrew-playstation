@@ -2,7 +2,6 @@ class Quickbms < Formula
   desc "Generic file extractor and reimporter"
   homepage "http://aluigi.altervista.org/quickbms.htm"
   url "http://aluigi.altervista.org/papers/quickbms-src-0.10.1.zip"
-  version "0.10.1"
   sha256 "80f598dcd81e906076c1b522c38a3e0c220081878d7c2e9dca3902c32442459c"
 
   depends_on "openssl"
