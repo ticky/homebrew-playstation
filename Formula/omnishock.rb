@@ -6,6 +6,8 @@ class Omnishock < Formula
   head "https://github.com/ticky/omnishock.git"
 
   depends_on "rust" => :build
+  # TODO: Remove this if udev stops being a problem
+  depends_on :macos
   depends_on "sdl2"
 
   def install
