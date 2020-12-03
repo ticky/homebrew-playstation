@@ -3,6 +3,7 @@ class Popstation < Formula
   homepage "https://github.com/ticky/popstation"
   url "https://github.com/ticky/popstation.git", revision: "51365d05c757ee346f8f1c4b9ea2691a2b8be608"
   version "2017-03-25T412543Z"
+  revision 1
 
   head "https://github.com/ticky/popstation.git"
 
