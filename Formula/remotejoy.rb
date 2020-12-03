@@ -6,6 +6,13 @@ class Remotejoy < Formula
 
   head "https://github.com/pspdev/psplinkusb.git"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-playstation/releases/download/remotejoy-2015-12-16T375254Z"
+    cellar :any
+    sha256 "9a7599deedccc74103613a17d23d4101ab9701c0e39df32e76e21bafd6a86a2f" => :catalina
+    sha256 "d0841da0b288f42d7688dc0c7c5b829af69d0c6dd330f14860684817cc7e5472" => :x86_64_linux
+  end
+
   depends_on "libusb-compat"
   depends_on "sdl"
   depends_on "usbhostfs_pc"
