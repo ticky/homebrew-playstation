@@ -3,6 +3,7 @@ class Ps2iconsys < Formula
   homepage "http://www.ghulbus-inc.de/projects/ps2iconsys/index.html"
   url "https://github.com/ticky/ps2iconsys.git", revision: "0d9348d6174c729c0a3a4d80954bec5cc4690e55"
   version "1.0"
+  revision 1
 
   head "https://github.com/ticky/ps2iconsys.git"
 
