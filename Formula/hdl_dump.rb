@@ -7,6 +7,13 @@ class HdlDump < Formula
 
   head "https://github.com/AKuHAK/hdl-dump.git"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-playstation/releases/download/hdl_dump-2020-07-27T400351Z_1"
+    cellar :any_skip_relocation
+    sha256 "d7d97d9fc8390342bdd7d09561e6e9bcdf22474b9a4ff40da4e3863f2b6c1249" => :catalina
+    sha256 "cacb765fcd0fd928b613fd276f9aac9c6457735461f9d6f51edc16f3bd283b68" => :x86_64_linux
+  end
+
   def install
     system "make", "RELEASE=yes", "IIN_OPTICAL_MMAP=no"
     bin.install "hdl_dump"
