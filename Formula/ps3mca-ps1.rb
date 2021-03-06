@@ -8,7 +8,8 @@ class Ps3mcaPs1 < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/ps3mca-ps1-2020-03-29T111341Z"
-    sha256 cellar: :any, catalina: "76a330055ae948bfb6080a866b2950965b5f70ac1ff009a9ccee31d9108466c0"
+    rebuild 1
+    sha256 cellar: :any, catalina: "756ccd034bdf3b8a2b7e0fd060f41c4e871f961f0108b24f849d4b54e306b4de"
   end
 
   depends_on "pkg-config" => :build
