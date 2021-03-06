@@ -15,12 +15,12 @@ class Popstation < Formula
     system "make"
     bin.install "popstation", "popstation_md"
   end
-  
-  def caveats 
+
+  def caveats
     <<~EOS
       You must place a copy of BASE.PBP in:
         ~/.popstation/BASE.PBP
-      
+
       One valid BASE.PBP file has the following sha256 hash:
         e0d49b137102eea2d50a9cfc8359e9cd835d10c3f657b59fc0f086b4671cec3d
     EOS
