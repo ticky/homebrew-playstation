@@ -9,9 +9,8 @@ class Cisoplus < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/cisoplus-2015-01-15T442702Z_1"
-    cellar :any_skip_relocation
-    sha256 "fe0fd99504a1b3b0b43f1bf6331fdc136cd6c49af49f3518a821f30f11808452" => :catalina
-    sha256 "df3fd7237bcb3b61df2c46b54512e141cdece63b2654b3f96767bc4ecdcdf45a" => :x86_64_linux
+    sha256 cellar: :any_skip_relocation, catalina:     "fe0fd99504a1b3b0b43f1bf6331fdc136cd6c49af49f3518a821f30f11808452"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "df3fd7237bcb3b61df2c46b54512e141cdece63b2654b3f96767bc4ecdcdf45a"
   end
 
   def install
