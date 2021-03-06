@@ -9,8 +9,9 @@ class PsxMctool < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/psx-mctool-2016-10-16T462420Z_1"
-    sha256 cellar: :any_skip_relocation, catalina:     "01d0cff524961c6a5a3e1a2f44ee888410e10709791c1c3c4fe60283715778d0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "90d4a65237bc6bcf0807a650f7da3c1b9ef913bf6ce2d93b7cec3649212767aa"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina:     "7553817453876fedad753588d5d27f43ed218c35bd51f2d5d11af5e2787c8e81"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c2f487a3ee3ae87c3c6fd84f1363d7edec2d73ccb33a2ffc34cebc4e117dab00"
   end
 
   depends_on "rust" => :build
