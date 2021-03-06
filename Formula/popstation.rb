@@ -7,6 +7,11 @@ class Popstation < Formula
 
   head "https://github.com/ticky/popstation.git"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-playstation/releases/download/popstation-2017-03-25T412543Z_1"
+    sha256 cellar: :any_skip_relocation, catalina: "721df380c73df207a0999d43b1d7db70a1986a1aaa004686d146fe07f620de75"
+  end
+
   depends_on "iniparser"
   # TODO: Remove this if math.h stops being a problem
   depends_on :macos
