@@ -8,8 +8,9 @@ class Remotejoy < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/remotejoy-2020-06-24T131548Z"
-    sha256 cellar: :any, catalina:     "c4365833565caaa2b4821c9b5933773e93151f1786018b5bb0d7b79a854a44db"
-    sha256 cellar: :any, x86_64_linux: "7fa0deda889564aa9d8624b50fa1945823df7922d3686c1c0db3a0cf179f5ae5"
+    rebuild 1
+    sha256 cellar: :any,                 catalina:     "8c5bd354abef9d5711da0e3662fcf7673311b8d48e1f3f4bece66fa222322063"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "f87686484bc43854257b318daaf719af06601a629a43f12122d226ffb8a52f14"
   end
 
   depends_on "libusb-compat"
