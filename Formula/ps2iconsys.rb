@@ -9,7 +9,8 @@ class Ps2iconsys < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/ps2iconsys-1.0_1"
-    sha256 cellar: :any_skip_relocation, catalina: "dd6a58903bb0660b35b4bd8780c61db565609c4f447c261237126d0c8f9b07c2"
+    cellar :any_skip_relocation
+    sha256 "dd6a58903bb0660b35b4bd8780c61db565609c4f447c261237126d0c8f9b07c2" => :catalina
   end
 
   depends_on :macos
