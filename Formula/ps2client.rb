@@ -9,8 +9,9 @@ class Ps2client < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/ps2client-2018-10-18T440508Z_1"
-    sha256 cellar: :any_skip_relocation, catalina:     "4bbe65becedb8fd4e6e78620df1e45a78a4f43690e9caa65ea2ae45764547788"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "b9ee5bf9a7d6a2bbaf767ced51d5d017ff3997fd04ea78dbcb014839ceba69ea"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina:     "ed17124e075ad3bc8f62b9330ceea06ab192a7fff70dd981e8b43c107a8eac8d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "60f790ea0d85c285bdf99f9395b9b0d37fbe7e5de434d899f948be2b593437b5"
   end
 
   def install
