@@ -9,7 +9,8 @@ class Cue2pops < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/cue2pops-2015-11-04T502728Z_1"
-    sha256 cellar: :any_skip_relocation, catalina: "7045d3efd0cd76d66d0fb164577fef31d19674da144ac6d3460ea5f323c7d5ba"
+    rebuild 1
+    sha256 cellar: :any_skip_relocation, catalina: "59cbc08e1b48914290eb1b8686e964ad0c008b8e95b9f3bdec9d6d56a977181d"
   end
 
   depends_on :macos
