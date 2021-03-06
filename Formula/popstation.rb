@@ -8,6 +8,8 @@ class Popstation < Formula
   head "https://github.com/ticky/popstation.git"
 
   depends_on "iniparser"
+  # TODO: Remove this if math.h stops being a problem
+  depends_on :macos
 
   patch :DATA
 
