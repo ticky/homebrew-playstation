@@ -8,9 +8,8 @@ class PbpUtilities < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/pbp-utilities-2020-05-07T225041Z"
-    cellar :any_skip_relocation
-    sha256 "b8fd1964dc969e751e8481db7a0b2d38a910431a745420f12a5594ea20cafc28" => :catalina
-    sha256 "fc562bc364f1ff495499f517fea9ca1c8edbccfa1f52b5c92b8f240dfc285c46" => :x86_64_linux
+    sha256 cellar: :any_skip_relocation, catalina:     "b8fd1964dc969e751e8481db7a0b2d38a910431a745420f12a5594ea20cafc28"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "fc562bc364f1ff495499f517fea9ca1c8edbccfa1f52b5c92b8f240dfc285c46"
   end
 
   def install
