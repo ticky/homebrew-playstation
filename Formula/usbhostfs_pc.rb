@@ -8,8 +8,9 @@ class UsbhostfsPc < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/usbhostfs_pc-2020-06-24T131548Z"
-    sha256 cellar: :any, catalina:     "b15e8197344179193ced7fc3c14438aab886be45ffcd868fdcb30b9e6af76489"
-    sha256 cellar: :any, x86_64_linux: "f562e4a2006f1e3ffe9c1033276b70663147319c9860ccfe78b5b11bb6e1eeef"
+    rebuild 1
+    sha256 cellar: :any,                 catalina:     "8b13ec68e482289908338a727ba11cd2835d6a82327173e14ec202faa9ca2a29"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "c987cf5478a96e99e8c8646541a563ccb2e0d1bf8b8bed813aa8fb2c977ccefd"
   end
 
   depends_on "libusb-compat"
