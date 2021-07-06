@@ -11,4 +11,9 @@ A collection of PlayStation utilities
 Or `brew tap ticky/playstation` and then `brew install <formula>`.
 
 ## Documentation
+
 `brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+
+## See Also
+
+[ticky/dreamcast](https://github.com/ticky/homebrew-dreamcast) • [ticky/utilities](https://github.com/ticky/homebrew-utilities) • [mistydemeo/formulae](https://github.com/mistydemeo/homebrew-formulae)
