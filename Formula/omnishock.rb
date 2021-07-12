@@ -12,8 +12,8 @@ class Omnishock < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/omnishock-0.0.9"
-    rebuild 1
-    sha256 cellar: :any, catalina: "01795559708ee76aa7a4f6940ace4993ac6e3c8ae2eaae6bb7ca916caf956249"
+    rebuild 2
+    sha256 cellar: :any, catalina: "229bfcea85efcb0828dcd76578aa4918abb8c71c455be1cd7311d9ada214f253"
   end
 
   depends_on "rust" => :build
