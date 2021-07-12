@@ -5,6 +5,11 @@ class Omnishock < Formula
 
   head "https://github.com/ticky/omnishock.git"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/omnishock-0.0.9"
     rebuild 1

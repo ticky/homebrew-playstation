@@ -7,6 +7,11 @@ class Ps2iconsys < Formula
 
   head "https://github.com/ticky/ps2iconsys.git"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/ps2iconsys-1.0_1"
     rebuild 1

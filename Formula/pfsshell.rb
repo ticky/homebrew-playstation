@@ -6,6 +6,11 @@ class Pfsshell < Formula
 
   head "https://github.com/ps2homebrew/pfsshell.git"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/pfsshell-1.1.1_1"
     rebuild 1

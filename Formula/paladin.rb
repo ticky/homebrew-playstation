@@ -6,6 +6,11 @@ class Paladin < Formula
 
   head "https://github.com/ticky/paladin.git"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/paladin-1.3_1"
     rebuild 1
