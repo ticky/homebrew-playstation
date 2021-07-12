@@ -1,16 +1,11 @@
 class Ps2iconsys < Formula
   desc "PlayStation 2 icon.sys Tools"
-  homepage "http://www.ghulbus-inc.de/projects/ps2iconsys/index.html"
+  homepage "https://www.ghulbus-inc.de/projects/ps2iconsys/index.html"
   url "https://github.com/ticky/ps2iconsys.git", revision: "0d9348d6174c729c0a3a4d80954bec5cc4690e55"
   version "1.0"
   revision 1
 
   head "https://github.com/ticky/ps2iconsys.git"
-
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/ps2iconsys-1.0_1"
