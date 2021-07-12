@@ -13,9 +13,9 @@ class Pfsshell < Formula
 
   bottle do
     root_url "https://github.com/ticky/homebrew-playstation/releases/download/pfsshell-1.1.1_1"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, catalina:     "ba6b207b6acdffd71f8b9d6c77db1278541dafaf4b6ae935ad6df65a5e1934ec"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "f5a0b10034f1957ca858e21b9e054b88cb01a1666fff748b16c9159ee5db5612"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, catalina:     "7e8e18aa765e772c5163d5272a41a8b90b777a2743ad98c116a8c40cc2492caa"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "cb9c9811ae9868528cd0043b207bffc28ffefb359bdad5a3546bd6b6d632e76b"
   end
 
   depends_on "meson" => :build
