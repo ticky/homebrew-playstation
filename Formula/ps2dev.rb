@@ -21,6 +21,10 @@ class Ps2dev < Formula
   depends_on "texinfo"
   depends_on "wget"
 
+  on_linux do
+    depends_on "python" => :build
+  end
+
   conflicts_with "ps2client",
                  because: "ps2client is installed by both Formulae"
 
