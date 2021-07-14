@@ -14,6 +14,9 @@ class Ps2client < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "60f790ea0d85c285bdf99f9395b9b0d37fbe7e5de434d899f948be2b593437b5"
   end
 
+  conflicts_with "ps2dev",
+                 because: "ps2client is installed by both Formulae"
+
   def install
     system "make"
     bin.install "bin/fsclient", "bin/ps2client"
