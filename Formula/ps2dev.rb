@@ -24,8 +24,6 @@ class Ps2dev < Formula
   conflicts_with "ps2client",
                  because: "ps2client is installed by both Formulae"
 
-  fails_with :clang
-
   def install
     ENV["PS2DEV"] = prefix
     ENV["PS2SDK"] = prefix/"ps2sdk"
