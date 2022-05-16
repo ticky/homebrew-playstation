@@ -3,7 +3,7 @@ class Pkg2zip < Formula
   homepage "https://github.com/lusid1/pkg2zip"
   url "https://github.com/lusid1/pkg2zip.git", tag: "2.3"
   license "Unlicense"
-  head "https://github.com/lusid1/pkg2zip.git"
+  head "https://github.com/lusid1/pkg2zip.git", branch: "master"
 
   patch :DATA if Hardware::CPU.arm?
 
