@@ -5,6 +5,12 @@ class Pkg2zip < Formula
   license "Unlicense"
   head "https://github.com/lusid1/pkg2zip.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/ticky/homebrew-playstation/releases/download/pkg2zip-2.3"
+    sha256 cellar: :any_skip_relocation, big_sur:      "69a0c4bad109d019d658ebd1b9ea2fbfed4c6b0eba8d1fbf28514836a128cc18"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "ddcf22a56ec91b47faaaff06faa2938b6f5b356427d5d72921362c602dd64dd4"
+  end
+
   patch :DATA if Hardware::CPU.arm?
 
   def install
